@@ -8,7 +8,9 @@
 		<version>3.4.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>tech.ada.yuri</groupId>
+
 	<artifactId>ml-users</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ml-users</name>
@@ -60,7 +62,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter-validation</artifactId>
 			</dependency>
-
 	</dependencies>
 
 	<build>

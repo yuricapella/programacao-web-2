@@ -1,0 +1,16 @@
+# API REST
+
+Evoluir o projeto do último módulo para uma API REST em Spring Boot com os seguintes itens:
+
+- Persistência em banco de dados (H2 ou Postgres);
+- Consumo de uma API externa pública; (opcional);
+- Autenticação Básica (opcional);
+- Swagger (opcional);
+- Frontend (opcional(;
+
+## Entregaveis
+
+* O projeto pode ser feito opcionalmente em grupos de 3 até 5 pessoas;
+* O projeto deverá ser entregue no github ou zipado no LMS;
+* Documentação no REAMDE.md, com os diagramas das classes principais e guia de uso;
+* Realizar uma apresentação com os pontos mais desafiadores do projeto, os perrengues passados e um resumo do que foi entregue e o que não pode ser entregue;

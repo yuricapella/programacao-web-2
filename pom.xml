@@ -32,6 +32,7 @@
 		<java.version>21</java.version>
 	</properties>
 	<dependencies>
+
 		<!-- SPRING WEB -->
 			<dependency>
 				<groupId>org.springframework.boot</groupId>

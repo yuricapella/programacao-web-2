@@ -2,13 +2,13 @@ package tech.ada.yuri.ml_users.service;
 
 import org.springframework.stereotype.Service;
 import tech.ada.yuri.ml_users.model.Usuario;
-import tech.ada.yuri.ml_users.repository.UsuariosRepository;
+import tech.ada.yuri.ml_users.repository.UsuarioRepository;
 
 @Service
 public class CriarUsuarioService {
-    private final UsuariosRepository usuariosRepository;
+    private final UsuarioRepository usuariosRepository;
 
-    public CriarUsuarioService(UsuariosRepository usuariosRepository) {
+    public CriarUsuarioService(UsuarioRepository usuariosRepository) {
         this.usuariosRepository = usuariosRepository;
     }
 

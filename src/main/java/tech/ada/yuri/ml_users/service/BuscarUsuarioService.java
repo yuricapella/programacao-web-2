@@ -3,8 +3,9 @@ package tech.ada.yuri.ml_users.service;
 import org.springframework.stereotype.Service;
 import tech.ada.yuri.ml_users.dto.UsuarioDTO;
 import tech.ada.yuri.ml_users.dto.mapper.UsuarioMapper;
+import tech.ada.yuri.ml_users.exception.UsuarioNaoEncontradoException;
 import tech.ada.yuri.ml_users.model.Usuario;
-import tech.ada.yuri.ml_users.repository.UsuariosRepository;
+import tech.ada.yuri.ml_users.repository.UsuarioRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,9 +13,9 @@ import java.util.stream.Collectors;
 
 @Service
 public class BuscarUsuarioService {
-    UsuariosRepository usuariosRepository;
+    UsuarioRepository usuariosRepository;
 
-    public BuscarUsuarioService(UsuariosRepository usuariosRepository) {
+    public BuscarUsuarioService(UsuarioRepository usuariosRepository) {
         this.usuariosRepository = usuariosRepository;
     }
 
@@ -28,6 +29,6 @@ public class BuscarUsuarioService {
     public Usuario buscarUsuarioPorId(Long id) {
         Optional<Usuario> usuarioOptional = usuariosRepository.findById(id);
         return usuarioOptional
-                .orElseThrow(() -> new RuntimeException("Usuário com ID " + id + " não encontrado"));
+                .orElseThrow(() -> new UsuarioNaoEncontradoException(id));
     }
 }

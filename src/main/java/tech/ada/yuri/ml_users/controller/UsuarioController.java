@@ -5,17 +5,15 @@ import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import tech.ada.yuri.ml_users.dto.AtualizarUsuarioRequestDTO;
-import tech.ada.yuri.ml_users.dto.CriarUsuarioRequestDTO;
-import tech.ada.yuri.ml_users.dto.UsuarioDTO;
-import tech.ada.yuri.ml_users.dto.mapper.AtualizarUsuarioRequestMapper;
-import tech.ada.yuri.ml_users.dto.mapper.CriarUsuarioRequestMapper;
-import tech.ada.yuri.ml_users.exception.UsuarioNaoEncontradoException;
+import tech.ada.yuri.ml_users.dto.usuario.AtualizarUsuarioRequestDTO;
+import tech.ada.yuri.ml_users.dto.usuario.CriarUsuarioRequestDTO;
+import tech.ada.yuri.ml_users.dto.usuario.UsuarioDTO;
+import tech.ada.yuri.ml_users.dto.usuario.mapper.CriarUsuarioRequestMapper;
 import tech.ada.yuri.ml_users.model.Usuario;
-import tech.ada.yuri.ml_users.service.AtualizarUsuarioService;
-import tech.ada.yuri.ml_users.service.BuscarUsuarioService;
-import tech.ada.yuri.ml_users.service.CriarUsuarioService;
-import tech.ada.yuri.ml_users.service.DeletarUsuarioService;
+import tech.ada.yuri.ml_users.service.usuario.AtualizarUsuarioService;
+import tech.ada.yuri.ml_users.service.usuario.BuscarUsuarioService;
+import tech.ada.yuri.ml_users.service.usuario.CriarUsuarioService;
+import tech.ada.yuri.ml_users.service.usuario.DeletarUsuarioService;
 
 import java.util.List;
 

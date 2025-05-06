@@ -1,8 +1,6 @@
-package tech.ada.yuri.ml_users.dto.mapper;
+package tech.ada.yuri.ml_users.dto.usuario.mapper;
 
-import tech.ada.yuri.ml_users.dto.AtualizarUsuarioRequestDTO;
-import tech.ada.yuri.ml_users.dto.CriarUsuarioRequestDTO;
-import tech.ada.yuri.ml_users.dto.UsuarioDTO;
+import tech.ada.yuri.ml_users.dto.usuario.AtualizarUsuarioRequestDTO;
 import tech.ada.yuri.ml_users.model.Usuario;
 
 import java.time.LocalDateTime;

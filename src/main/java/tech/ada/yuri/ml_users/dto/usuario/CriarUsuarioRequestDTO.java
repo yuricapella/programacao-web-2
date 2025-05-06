@@ -1,4 +1,4 @@
-package tech.ada.yuri.ml_users.dto;
+package tech.ada.yuri.ml_users.dto.usuario;
 
 import jakarta.validation.constraints.*;
 
@@ -19,6 +19,10 @@ public class CriarUsuarioRequestDTO {
     @NotNull(message = "Idade não pode ser nula")
     @Positive(message = "Idade não pode ser negativa")
     private int idade;
+
+    @NotBlank(message = "CEP não pode ser vazio")
+    @Size(min=8,max=8)
+    private String cep;
 
     public CriarUsuarioRequestDTO() {
     }
@@ -60,5 +64,13 @@ public class CriarUsuarioRequestDTO {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    public @NotBlank @Size(min = 8, max = 8) String getCep() {
+        return cep;
+    }
+
+    public void setCep(@NotBlank @Size(min = 8, max = 8) String cep) {
+        this.cep = cep;
     }
 }

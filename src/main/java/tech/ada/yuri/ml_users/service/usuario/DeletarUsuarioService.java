@@ -1,4 +1,4 @@
-package tech.ada.yuri.ml_users.service;
+package tech.ada.yuri.ml_users.service.usuario;
 
 import org.springframework.stereotype.Service;
 import tech.ada.yuri.ml_users.repository.UsuarioRepository;

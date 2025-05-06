@@ -1,8 +1,8 @@
-package tech.ada.yuri.ml_users.service;
+package tech.ada.yuri.ml_users.service.usuario;
 
 import org.springframework.stereotype.Service;
-import tech.ada.yuri.ml_users.dto.AtualizarUsuarioRequestDTO;
-import tech.ada.yuri.ml_users.dto.mapper.AtualizarUsuarioRequestMapper;
+import tech.ada.yuri.ml_users.dto.usuario.AtualizarUsuarioRequestDTO;
+import tech.ada.yuri.ml_users.dto.usuario.mapper.AtualizarUsuarioRequestMapper;
 import tech.ada.yuri.ml_users.model.Usuario;
 
 @Service

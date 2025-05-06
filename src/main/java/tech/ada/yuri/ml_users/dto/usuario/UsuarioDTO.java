@@ -1,9 +1,12 @@
-package tech.ada.yuri.ml_users.dto;
+package tech.ada.yuri.ml_users.dto.usuario;
+
+import tech.ada.yuri.ml_users.dto.endereco.EnderecoDTO;
 
 public class UsuarioDTO {
     private String nome;
     private String email;
     private int idade;
+    private EnderecoDTO endereco;
 
     public UsuarioDTO() {
 
@@ -37,5 +40,13 @@ public class UsuarioDTO {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    public EnderecoDTO getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(EnderecoDTO endereco) {
+        this.endereco = endereco;
     }
 }

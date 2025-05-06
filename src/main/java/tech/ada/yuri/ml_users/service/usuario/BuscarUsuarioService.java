@@ -1,8 +1,8 @@
-package tech.ada.yuri.ml_users.service;
+package tech.ada.yuri.ml_users.service.usuario;
 
 import org.springframework.stereotype.Service;
-import tech.ada.yuri.ml_users.dto.UsuarioDTO;
-import tech.ada.yuri.ml_users.dto.mapper.UsuarioMapper;
+import tech.ada.yuri.ml_users.dto.usuario.UsuarioDTO;
+import tech.ada.yuri.ml_users.dto.usuario.mapper.UsuarioMapper;
 import tech.ada.yuri.ml_users.exception.UsuarioNaoEncontradoException;
 import tech.ada.yuri.ml_users.model.Usuario;
 import tech.ada.yuri.ml_users.repository.UsuarioRepository;

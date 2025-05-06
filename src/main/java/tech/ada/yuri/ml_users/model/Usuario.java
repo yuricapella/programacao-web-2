@@ -22,6 +22,10 @@ public class Usuario {
     private LocalDateTime dataCriacao;
     private LocalDateTime dataAtualizacao;
 
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "endereco_id")
+    private Endereco endereco;
+
     public Usuario() {
         if(dataCriacao == null){
             this.dataCriacao = LocalDateTime.now();
@@ -29,12 +33,13 @@ public class Usuario {
 
     }
 
-    public Usuario(String nome, String email, String senha, int idade) {
+    public Usuario(String nome, String email, String senha, int idade, Endereco endereco) {
         this.nome = nome;
         this.email = email;
         this.senha = senha;
         this.idade = idade;
         this.dataCriacao = LocalDateTime.now();
+        this.endereco = endereco;
     }
 
     public Long getId() {
@@ -91,5 +96,13 @@ public class Usuario {
 
     public void setDataAtualizacao(LocalDateTime dataAtualizacao) {
         this.dataAtualizacao = dataAtualizacao;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
     }
 }

@@ -1,4 +1,4 @@
-package tech.ada.yuri.ml_users.dto;
+package tech.ada.yuri.ml_users.dto.usuario;
 
 import jakarta.validation.constraints.*;
 

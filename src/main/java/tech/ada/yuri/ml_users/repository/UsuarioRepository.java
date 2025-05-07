@@ -12,7 +12,7 @@ import java.util.List;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 
-    List<Usuario> findByOrderByNomesAsc();
+    List<Usuario> findByOrderByNomeAsc();
 
     List<Usuario> findByIdadeBetween(int idadInicial, int idadeFinal);
 

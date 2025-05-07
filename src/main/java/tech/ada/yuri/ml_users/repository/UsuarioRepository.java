@@ -8,6 +8,7 @@ import tech.ada.yuri.ml_users.model.Usuario;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
@@ -15,6 +16,8 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
     List<Usuario> findByOrderByNomeAsc();
 
     List<Usuario> findByIdadeBetween(int idadInicial, int idadeFinal);
+
+    Optional<Usuario> findByEmailIgnoreCase(String email);
 
     List<Usuario> findByEmailEndingWith(String dominio);
 

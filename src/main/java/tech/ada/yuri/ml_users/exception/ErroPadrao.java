@@ -1,12 +1,13 @@
 package tech.ada.yuri.ml_users.exception;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Map;
 
 public class ErroPadrao {
     private String codigoErro;
-    private LocalDate dataHoraErro;
-    private String mensagemErro;
+    private LocalDateTime dataHora;
+    private String mensagem;
     private Map<String, String> errors;
 
 
@@ -19,20 +20,20 @@ public class ErroPadrao {
         this.codigoErro = codigoErro;
     }
 
-    public LocalDate getDataHoraErro() {
-        return dataHoraErro;
+    public LocalDateTime getDataHora() {
+        return dataHora;
     }
 
-    public void setDataHoraErro(LocalDate dataHoraErro) {
-        this.dataHoraErro = dataHoraErro;
+    public void setDataHora(LocalDateTime dataHora) {
+        this.dataHora = dataHora;
     }
 
-    public String getMensagemErro() {
-        return mensagemErro;
+    public String getMensagem() {
+        return mensagem;
     }
 
-    public void setMensagemErro(String mensagemErro) {
-        this.mensagemErro = mensagemErro;
+    public void setMensagem(String mensagem) {
+        this.mensagem = mensagem;
     }
 
     public Map<String, String> getErrors() {

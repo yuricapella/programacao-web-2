@@ -3,6 +3,20 @@
 ## Descrição
 API REST desenvolvida em Java com Spring Boot para gerenciamento de usuários, incluindo autenticação e autorização com Spring Security.
 
+## 📝 Anotações do Curso
+Este projeto foi desenvolvido durante o módulo de Programação Web II, onde cada aula representa uma evolução do projeto. As anotações detalhadas de cada aula podem ser encontradas em suas respectivas pastas:
+
+- [Aula 01 - Introdução ao Spring Boot](https://github.com/yuricapella/programacao-web-2/tree/master/aulas/aula_01)
+- [Aula 02 - API REST com Spring Boot](https://github.com/yuricapella/programacao-web-2/tree/master/aulas/aula_02)
+- [Aula 03 - DTO e Validações](https://github.com/yuricapella/programacao-web-2/tree/master/aulas/aula_03)
+- [Aula 04 - Documentação e Recursos Adicionais](https://github.com/yuricapella/programacao-web-2/tree/master/aulas/aula_04)
+
+> **Nota**: As anotações completas do curso, incluindo conceitos e exemplos, estão disponíveis no arquivo [ANOTACOES.md](https://github.com/yuricapella/programacao-web-2/blob/master/ANOTACOES.md).
+
+### Evolução do Projeto
+O desenvolvimento do projeto foi realizado em branches separadas para melhor visualização da evolução de cada aula. As 4 aulas documentadas aqui representam a base do projeto, enquanto as implementações adicionais podem ser encontradas em branches específicas.
+
+
 ## Tecnologias Utilizadas
 - Java 21
 - Spring Boot 3.4.4

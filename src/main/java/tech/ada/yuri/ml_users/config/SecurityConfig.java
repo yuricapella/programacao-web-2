@@ -38,6 +38,14 @@ public class SecurityConfig {
                             .permitAll();
                     req.requestMatchers(new AntPathRequestMatcher("/favicon.ico"))
                             .permitAll();
+                    req.requestMatchers(new AntPathRequestMatcher("/swagger.**"))
+                            .permitAll();
+                    req.requestMatchers(new AntPathRequestMatcher("/swagger-ui/**"))
+                            .permitAll();
+                    req.requestMatchers(new AntPathRequestMatcher("/swagger-config/**"))
+                            .permitAll();
+                    req.requestMatchers(new AntPathRequestMatcher("/v3/**"))
+                            .permitAll();
                 })
                 .headers(headers -> headers.frameOptions(frameOptions -> frameOptions.disable()))
                 .build();

@@ -1,6 +1,7 @@
 
 package tech.ada.yuri.ml_users.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -34,16 +35,22 @@ public class UsuarioController {
     }
 
     @GetMapping
+    @Operation(summary = "Listar todos os usuários",
+            description = "Retorna uma lista de todos os usuários cadastrados.")
     public List<UsuarioDTO> buscarTodosOsUsuarios() {
         return buscarUsuarioService.buscarTodosOsUsuarios();
     }
 
     @GetMapping(path = "/{id}")
+    @Operation(summary = "Buscar usuário por ID",
+            description = "Retorna um usuário especifico com base no ID")
     public Usuario buscarUsuarioPorId(@PathVariable(value = "id") Long id) {
         return buscarUsuarioService.buscarUsuarioPorId(id);
     }
 
     @PostMapping
+    @Operation(summary = "Criar um novo usuário",
+            description = "Cria um novo usuário com os dados fornecidos")
     public ResponseEntity<Usuario> criarUsuario(@RequestBody @Valid CriarUsuarioRequestDTO usuario) {
         return ResponseEntity
                 .status(HttpStatus.CREATED)
@@ -51,6 +58,8 @@ public class UsuarioController {
     }
 
     @PutMapping("/{id}")
+    @Operation(summary = "Atualizar um usuário existente",
+            description = "Atualiza os dados de um usuário existente com base no ID fornecido.")
     public ResponseEntity<Usuario> atualizarUsuario(@RequestBody @Valid AtualizarUsuarioRequestDTO usuarioAtualizado, @PathVariable(value = "id") Long id) {
         return ResponseEntity
                 .status(HttpStatus.OK)
@@ -58,6 +67,8 @@ public class UsuarioController {
     }
 
     @DeleteMapping("/{id}")
+    @Operation(summary = "Deletar um usuário",
+            description = "Deleta um usuário específico com base no ID fornecido.")
     public ResponseEntity<Void> deletarUsuario(@PathVariable(value = "id") Long id) {
         deletarUsuario.deletarUsuarioPorId(id);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
